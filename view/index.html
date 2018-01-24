@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Start META -->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <!-- TITLE -->
+        <title>CaseExe Test Application</title>
+
+        <!-- Start Sheets CSS -->
+        <link href="./css/style.css" rel="stylesheet" type="text/css">
+        <script src="/js/jquery.js"></script>
+    </head>
+    <body>
+        <div id="wrap">
+            <div id="top-block">
+                <div class="app-title">
+                    <h2>CaseExe Test Application</h2>
+                </div>
+                <?php if($login->is_logged){ ?>
+                    <div class="menu">
+                        <a href="?logout=true">Logout (<?= $login->user_name; ?>)</a>
+                    </div>
+                <?php } ?>
+            </div>
+            <div id="content">
+                <?php echo $content; ?>
+            </div>
+        </div>
+    </body>
+</html>

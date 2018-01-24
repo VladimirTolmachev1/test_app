@@ -1,0 +1,18 @@
+<div class="main-game-container">
+    <div class="top-panel">
+        <div class="top-panel-items">My money: $<span id="money-count"><?php echo $money_amount; ?></span></div>
+        <div class="top-panel-items">My bonuses: <span id="bonus-count"><?php echo $bonus_amount; ?></span></div>
+        <div class="top-panel-items"><a href="#" onclick="sendMoney()">Send money to card</a></div>
+        <div class="top-panel-items"><a href="#" onclick="convertMoney()">Convert money to bonus</a></div>
+    </div>
+    <div class="push-button">
+        <input type="button" id="game-button" onclick="startGame();" value="START GAME" />
+    </div>
+    <div id="game-result">
+        <div class="win-message">
+            <div class="success-win">Please press button to start game!</div>
+        </div>
+    </div>
+</div>
+<script src="/js/game.js"></script>
+

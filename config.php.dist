@@ -1,0 +1,21 @@
+<?php
+ /**
+ * Main Config file
+ */
+
+ // DB.class config
+ define('DB_SERVER','localhost');
+ define('DB_USER','');
+ define('DB_PASS','');
+ define('DB_NAME','');
+
+ //Errors
+ define('ERROR_CONNECT','Sorry, we can\'t connect DB.class! Please contact administrator!');
+ define('NO_DB_SELECT','Sorry, current DB.class is not on server! Please contact administrator!');
+
+ //Host
+ define('HOST','http://'. $_SERVER['HTTP_HOST'] .'/');
+
+ //Debug mode
+define('DEBUG_MODE', true);
+?>
